@@ -1,7 +1,6 @@
 package task1;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
@@ -31,6 +30,40 @@ public class Test {
         myLinkedList.add("Fox");
         System.out.println("myLinkedList "+myLinkedList.size());
 
+        MyQueue<Integer> myQueue = new MyQueue();
+        System.out.println("myQueue peek "+myQueue.peek());
+        System.out.println("myQueue poll "+myQueue.poll());
+        myQueue.add(1);
+        myQueue.add(2);
+        myQueue.add(3);
 
+        System.out.println("myQueue "+myQueue.size());
+        myQueue.clear();
+        System.out.println("myQueue "+myQueue.size());
+        myQueue.add(1);
+        myQueue.add(2);
+        myQueue.add(3);
+        myQueue.add(4);
+        System.out.println("myQueue "+myQueue.size());
+        System.out.println("myQueue peek "+myQueue.peek());
+        System.out.println("myQueue poll "+myQueue.poll());
+        System.out.println("myQueue "+myQueue.size());
+
+        MyStack<String> myStack = new MyStack();
+
+        System.out.println("myStack peek "+myStack.peek());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.size());
+        myStack.add("First");
+        myStack.add("Second");
+        myStack.add("Third");
+        System.out.println(myStack.size());
+        System.out.println(myStack.peek());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.size());
+        myStack.clear();
+        System.out.println(myStack.size());
+
+        Map myMap = new HashMap<>();
     }
 }
